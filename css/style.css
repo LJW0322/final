@@ -1,0 +1,265 @@
+:root {
+  --bg: #0f1720;
+  --card: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --accent: linear-gradient(90deg, #00d4ff, #6a00ff);
+  --text: #e6eef8;
+  --muted: #9fb0c8;
+  --glass-blur: 8px;
+  --radius: 14px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* --- Common & Reset --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { 
+  height: 100%; 
+  scroll-behavior: smooth; 
+}
+body {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(106, 0, 255, 0.12), transparent 10%),
+    radial-gradient(800px 400px at 90% 90%, rgba(0, 212, 255, 0.08), transparent 10%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding-top: 72px;
+}
+ul { list-style-type: none; }
+a { text-decoration: none; color: inherit; }
+
+section { scroll-margin-top: 30px; }
+
+/* --- Container --- */
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Navbar --- */
+.nav {
+  position: fixed; left: 0; right: 0; top: 0; z-index: 40;
+  backdrop-filter: blur(6px);
+  background: rgba(6, 10, 15, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between; padding: 14px 0;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1.1rem; }
+.nav-links { display: flex; gap: 18px; align-items: center; }
+.nav-links a {
+  color: var(--muted); padding: 8px 10px; border-radius: 8px; font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links a:hover { color: var(--text); background: rgba(255, 255, 255, 0.03); }
+
+/* ... 기존 .nav-links a 스타일 아래에 추가 ... */
+
+/* 현재 보고 있는 메뉴 활성화 스타일 */
+.nav-links a.active {
+  color: #00d4ff; /* 포인트 컬러 */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.4); /* 살짝 빛나는 효과 */
+  font-weight: 800;
+}
+
+/* Hamburger */
+.hamburger { display: none; background: none; border: 0; cursor: pointer; }
+.hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--text);
+  margin: 4px 0; border-radius: 2px; opacity: 0.9; transition: 0.3s;
+}
+
+/* --- Hero Section --- */
+.hero { padding: 60px 0; }
+.hero-grid { display: grid; grid-template-columns: 1fr 380px; gap: 28px; align-items: start; }
+
+.hero-card {
+  min-height: 530px; padding: 28px; border-radius: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.hero-card .avatar {
+  margin-top: 8%; width: 96px; height: 96px; border-radius: 50%;
+  overflow: hidden; border: 2px solid rgba(255, 255, 255, 0.06); background: #333;
+}
+.hero-card .avatar img { width: 100%; height: 100%; object-fit: cover; }
+.hero-card h1 { font-size: 28px; margin-top: 6px; }
+.hero-card .role { color: var(--muted); font-weight: 600; }
+.hero-card .lead { color: var(--muted); word-break: keep-all; }
+
+.hero-actions { display: flex; gap: 12px; margin-top: 40px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; font-weight: 700; cursor: pointer;}
+.btn-primary { background: var(--accent); color: #fff; border: 0; box-shadow: 0 6px 18px rgba(106, 0, 255, 0.12); }
+.btn-ghost { background: transparent; color: var(--text); border: 1px solid rgba(255, 255, 255, 0.06); }
+.btn-sm {
+  padding: 8px 10px; border-radius: 8px; background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06); color: var(--text);
+  font-size: 14px; transition: transform .18s; cursor: pointer;
+}
+.btn-sm:hover { transform: translateY(-3px); background: rgba(255,255,255,0.05); }
+
+/* --- Visual Panel (Resume) --- */
+.visual-panel { padding: 25px; border-radius: 12px; min-height: 200px; }
+.visual-panel h3 { font-size: 1.2rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+.visual-panel h4 { font-size: 1.2rem; margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+
+/* Resume Grid Style */
+.resume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.resume-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+}
+.resume-date { color: #ffffff; font-weight: 700; font-size: 14px; line-height: 1.5; }
+.resume-desc { color: var(--text); font-size: 14px; line-height: 1.5; word-break: keep-all; }
+
+.skill-text { font-size: 14px; line-height: 1.6; color: var(--muted); margin-top: 5px;}
+
+/* --- Projects Section --- */
+.section { padding: 50px 0; }
+.section-title { font-size: 26px; margin-bottom: 6px; }
+.section-sub { color: var(--muted); margin-bottom: 20px; }
+.section-sub2 { color: var(--muted); margin-top: 60px; margin-bottom: 20px; font-weight: 600; font-size: 18px; }
+
+.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+/* --- Projects Section --- (기존 코드 찾아서 아래 내용으로 수정/추가) */
+
+.project-card {
+  overflow: hidden; 
+  border-radius: 12px; 
+  display: flex; 
+  flex-direction: column;
+  background: var(--card);
+  
+  /* [추가된 애니메이션 초기 상태] */
+  opacity: 0;                /* 처음엔 안 보임 */
+  transform: translateY(50px); /* 아래로 50px 내려가 있음 */
+  transition: 
+    opacity 0.8s ease-out, 
+    transform 0.8s ease-out, 
+    box-shadow 0.28s; /* 기존 호버 효과 시간 유지 */
+}
+
+/* [새로 추가] 화면에 나타날 때 적용될 클래스 */
+.project-card.visible {
+  opacity: 1;                /* 보이게 됨 */
+  transform: translateY(0);  /* 원래 위치로 올라옴 */
+}
+
+/* [기존 호버 효과 유지] */
+/* .visible 클래스가 붙은 상태에서 호버했을 때만 위로 뜨게 설정 */
+.project-card.visible:hover { 
+  transform: translateY(-10px); 
+  box-shadow: 0 24px 40px rgba(42, 83, 255, 0.4); 
+}
+.project-card:hover { transform: translateY(-10px); box-shadow: 0 24px 40px rgba(42, 83, 255, 0.4); }
+
+.thumb { height: 160px; background-size: cover; background-position: center; background-color: #222; }
+.card-body { padding: 20px; background: linear-gradient(180deg, rgba(6, 10, 15, 0.1), transparent); flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.card-body h3 { font-size: 18px; margin-bottom: 8px; }
+.card-body p { font-size: 14px; color: var(--muted); margin-bottom: 15px; word-break: keep-all; }
+
+.card-actions { display: flex; gap: 10px; align-items: center; }
+.link { color: #ffffff; font-weight: 700; font-size: 14px; }
+
+/* --- About Section --- */
+.about-grid { display: grid; grid-template-columns: 1fr 360px; gap: 20px; }
+.about-card { padding: 30px; border-radius: 12px; }
+.about-card h2 { margin-bottom: 20px; }
+.about-card p { margin-bottom: 30px; line-height: 1.8; color: var(--muted); word-break: keep-all;}
+
+.skills { padding: 30px; border-radius: 12px; }
+.skill-list { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+.skill-list li{margin-bottom: 20px;}
+.chip { background: rgba(255, 255, 255, 0.05); padding: 8px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; border: 1px solid rgba(255,255,255,0.05); }
+
+/* --- Contact Section --- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.contact-card { padding: 20px; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; }
+
+/* --- Footer --- */
+.footer { padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.03); margin-top: 220px; text-align: center; color: var(--muted); font-size: 14px; }
+
+/* --- Glass Effect Common --- */
+.glass {
+  background: var(--card);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+/* --- Hamburger Icon Animation (기존 코드 아래에 추가하거나 교체) --- */
+/* 햄버거 버튼 자체 스타일 보강 */
+.hamburger { 
+  display: none; 
+  background: none; 
+  border: 0; 
+  cursor: pointer; 
+  padding: 10px; /* 터치 영역 확보 */
+  position: relative;
+  z-index: 100; /* 메뉴판보다 항상 위에 있어야 함 */
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--text);
+  margin: 4px 0; border-radius: 2px; opacity: 1; transition: 0.3s;
+}
+
+/* 햄버거 버튼이 눌렸을 때(active) X자로 변하는 효과 */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* 가운데 줄 사라짐 */
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; margin-top: 20px; }
+  .hero-card { min-height: auto; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Mobile Menu Styles */
+  .hamburger { display: block; }
+  
+  .nav-links {
+    position: fixed;
+    top: 0; 
+    right: -100%; /* 평소에는 오른쪽 화면 밖 */
+    height: 100vh; 
+    width: 70%; /* 메뉴판 너비 */
+    max-width: 300px;
+    background: #0f1720; /* 배경색 확실하게 지정 */
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 텍스트 중앙 정렬 */
+    padding: 40px;
+    
+    transition: right 0.3s ease-in-out; /* 부드럽게 열리는 애니메이션 */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5); /* 그림자 추가 */
+    z-index: 90; /* 햄버거 버튼(100)보다 아래, 다른 요소들보다 위 */
+  }
+
+  /* 메뉴가 활성화되었을 때 */
+  .nav-links.active { 
+    right: 0; /* 화면 안으로 들어옴 */
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}

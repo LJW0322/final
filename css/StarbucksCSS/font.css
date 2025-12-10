@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/*공통*/
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', 'Nanum Gothic', '맑은 고딕'; box-sizing: border-box}
+ul{list-style: none;}
+body{overflow-x: hidden}
+a, a:active, a:focus, a:hover, a:visited{text-decoration: none; color: #333}
+
+/*주의 사항 시작*/
+.information{width: 100%; height: 50px; max-width: 450px; margin: 0 auto;}
+.info_t{float: left; width: 60%; padding-top: 8px; font-size: 10pt; font-weight: 400; color: #6a6a6a;}
+.back_button{float: right; width: 20%; background-color: #00704a; color: white; text-align: center; padding-top: 5px; padding-bottom: 5px; border-radius: 20px; margin-top: 8px; font-size: 12pt; font-weight: 600;}
+/*주의 사항 끝*/
+
+.big_inner_box{width: 100%; height: 800px; max-width: 450px; max-height: 800px; margin: 0 auto; background-color: #f2f3f7;}
+.inner_box{width: 100%; max-width: 450px; margin: 0 auto;}
+.clear{clear: both}
+/*공통 끝*/   
+
+/*헤더 시작*/
+.header{width: 100%; height: 135px; }
+.logo{width: 17%; float: left; margin-left: 5%; margin-top: 5%; }
+.logo img{width: 100%;}
+.h_t{width: 75%; float: left; margin-left: 3%; margin-top: 6.3%; color: #00704A; font-size: 16pt;}
+.h_t strong{font-size: 18pt;}
+/*헤더 끝*/ 
+
+/*메인 시작*/
+.main_n{
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    padding-top: 25px;
+    border-radius: 100%;
+    background: #f2F3f7;
+    box-shadow:  inset 5px 5px 5px #cecece,
+                inset -25px -25px 50px #f2f2f2;
+}
+
+.sub_n{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #f2F3f7;
+    box-shadow:  5px 5px 5px #cecfd2,
+                -25px -25px 50px #ffffff;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 60px;
+    font-weight: 300;
+    color: #00704a;
+}
+.m_t{width: 100%; text-align: center; color: #6a6a6a; margin-top: 12%;}
+.m_t h1{
+    font-size: 13pt;
+    font-weight: 500;
+}
+.m_t h2{
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+.s_box1{
+    float: left;
+    width: 42.5%;
+    height: 200px;
+    margin-top: 4%;
+    margin-left: 5%;
+    border-radius: 20px;
+    background: #f2F3f7;
+    box-shadow:  10px 10px 14px #cecfd2,
+                -25px -25px 50px #ffffff;
+}
+.s_box2{
+    float: right;
+    width: 42.5%;
+    height: 200px;
+    margin-top: 4%;
+    margin-right: 5%;
+    border-radius: 20px;
+    background: #f2F3f7;
+    box-shadow:  10px 10px 14px #cecfd2,
+                -25px -25px 50px #ffffff;
+}
+.s_t1{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #00704a;
+}
+.s_t1 h2{
+    font-size: 10pt;
+    font-weight: 400;
+    color: #6a6a6a;
+}
+
+.s_t2{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 18pt;
+    font-weight: 800;
+    color: #00704a;
+}
+.s_t2 h2{
+    font-size: 10pt;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+
+.s_box3{
+    width: 90%;
+    height: 50px;
+    margin-top: 4%;
+    margin-left: 5%;
+    border-radius: 20px;
+    background: #f2F3f7;
+    box-shadow:  10px 10px 14px #cecfd2,
+                -25px -25px 50px #ffffff;
+}
+.s_t3{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16pt;
+    font-weight: 500;
+    color: #00704a;
+}
+.s_t3 h2{
+    font-size: 10pt;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+/*메인 끝*/ 

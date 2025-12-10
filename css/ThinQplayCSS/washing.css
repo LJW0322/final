@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/*공통*/
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', 'Nanum Gothic', '맑은 고딕'; box-sizing: border-box}
+ul{list-style: none;}
+body{overflow-x: hidden}
+a, a:active, a:focus, a:hover, a:visited{text-decoration: none; color: #333}
+
+/*주의 사항 시작*/
+.information{width: 100%; height: 50px; max-width: 412px; margin: 0 auto;}
+.info_t{float: left; width: 65%; padding-top: 8px; font-size: 10pt; font-weight: 400; color: #6a6a6a;}
+.back_button{float: right; width: 20%; background-color: #ff0050; color: white; text-align: center; padding-top: 5px; padding-bottom: 5px; border-radius: 20px; margin-top: 8px; font-size: 12pt; font-weight: 600;}
+/*주의 사항 끝*/
+
+.big_inner_box{width: 100%; height: 865px; max-width: 412px; max-height: 795px; margin: 0 auto; background-color: #ffffff; overflow: scroll; -ms-overflow-style: none;}
+.big_inner_box::-webkit-scrollbar{display: none;}
+.inner_box{width: 100%; max-width: 380px; margin: 0 auto;}
+.clear{clear: both}
+
+/*상단 시작*/  
+.top{width: 380px; height: 50px; margin: 0 auto; margin-top: 0.5%;}
+.back{float: left; margin-top: 1.7%;}
+.name{float: left; font-size: 20pt; margin-left: 2%; font-weight: 500;}
+.menu{float: right; margin-top: 1.7%;}
+/*상단 끝*/ 
+
+/*메인 시작*/
+.w_t{text-align: center; margin-top: 4%;}
+.w_t h1{font-size: 18pt; font-weight: 500; color: #ff0050;}
+.w_t h2{font-size: 18pt; font-weight: 500;}
+.w_i{width: 100%; text-align: center; margin-top: 7%;}
+
+.standard{width: 100%; height: 50px; margin-top: 10%;}
+.s_t{float: left; font-size: 20pt; font-weight: 500;}
+.s_i{float: left; width: 20%; margin-top: 2%; margin-left: 2%;}
+.s_i img{width: 35%;}
+.s_p{float: right; background-color: rgb(255,0,80,0.8); width: 40px; height: 40px; border-radius: 40px; padding-top: 2.5%; padding-left: 2.5%;}
+
+.c1{float: left; background-color: #f6f6f6; width: 32%; height: 150px; border-radius: 14px; margin-bottom: 3%; margin-top: 3%;}
+.c1_i{text-align: center; width: 100%; margin-top: 26%;}
+.c1_t{width: 100%; text-align: center;}
+.c1_t h1{font-size: 14pt; color: #ff0050; font-weight: 500;}
+
+.c2{float: left; background-color: #f6f6f6; width: 32%; height: 150px; border-radius: 14px; margin-bottom: 3%; margin-left: 2%; margin-top: 3%;}
+.c2_i{text-align: center; width: 100%; margin-top: 26%;}
+.c2_t{width: 100%; text-align: center;}
+.c2_t h1{font-size: 14pt; color: #ff0050; font-weight: 500;}
+
+.c3{float: right; background-color: #f6f6f6; width: 32%; height: 150px; border-radius: 14px; margin-bottom: 3%; margin-top: 3%;}
+.c3_i{text-align: center; width: 100%; margin-top: 26%;}
+.c3_t{width: 100%; text-align: center;}
+.c3_t h1{font-size: 14pt; color: #ff0050; font-weight: 500;}
+
+.c4{width: 100%; height: 80px; background-color: #f6f6f6; border-radius: 14px; margin-bottom: 10%;}
+.c4_i{float: left; margin-top: 6.5%; margin-left: 7%;}
+.c4_t{float: left; margin-left: 5%; font-size: 14pt; font-weight: 400; margin-top: 6%;}
+.c4_t2{float: right; margin-right: 7%; font-size: 14pt; font-weight: 500; color: #ff0050; margin-top: 6%;}
+
+.play{width: 100%; height: 50px; background-color: rgb(255, 0, 80, 0.8); color: white; text-align: center; padding-top: 2.5%; font-size: 14pt; border-radius: 30px; font-weight: 500; margin-bottom: 5%;}
+
+.reserve{width: 100%; font-size: 13pt; color: #ff0050;}
+.r_i{float: left; margin-left: 30%; margin-top: 0.5%;}
+.r_i2{float: left; margin-left: 1%; margin-top: 0.7%;}
+.r_t{float: left; margin-left: 2%;}
+
+/*메인 끝*/

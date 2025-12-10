@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/*공통*/
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', 'Nanum Gothic', '맑은 고딕'; box-sizing: border-box}
+ul{list-style: none;}
+body{overflow-x: hidden}
+a, a:active, a:focus, a:hover, a:visited{text-decoration: none; color: #333}
+
+/*주의 사항 시작*/
+.information{width: 100%; height: 50px; max-width: 412px; margin: 0 auto;}
+.info_t{float: left; width: 65%; padding-top: 8px; font-size: 10pt; font-weight: 400; color: #6a6a6a;}
+.back_button{float: right; width: 20%; background-color: #ff0050; color: white; text-align: center; padding-top: 5px; padding-bottom: 5px; border-radius: 20px; margin-top: 8px; font-size: 12pt; font-weight: 600;}
+/*주의 사항 끝*/
+
+.big_inner_box{width: 100%; height: 765px; max-width: 412px; max-height: 795px; margin: 0 auto; background-color: #ffffff; overflow: scroll; -ms-overflow-style: none;}
+.big_inner_box::-webkit-scrollbar{display: none;}
+.inner_box{width: 100%; max-width: 380px; margin: 0 auto;}
+.clear{clear: both}
+
+/*상단 시작*/  
+.top{width: 380px; height: 50px; margin: 0 auto; margin-top: 0.5%;}
+.name{float: left; font-size: 20pt; font-weight: 500;}
+/*상단 끝*/ 
+
+/*메인 시작*/
+.c1_t{width: 100%; font-size: 16pt; color: #5b5b5b; font-weight: 500; margin-top: 5%; margin-bottom: 2%;}
+.c1_box{width: 100%; height: 250px; background-color: #f6f6f6; border-radius: 14px;}
+.c1_i{text-align: center; width: 100%; padding-top: 13%;}
+.c1_i img{width: 20%;}
+.c1_t1{text-align: center; color: #2a2a2a; padding-top: 3%;}
+
+.c2_t{width: 100%; font-size: 16pt; color: #5b5b5b; font-weight: 500; margin-top: 10%; margin-bottom: 2%;}
+.c2_box{width: 100%; height: 250px; background-color: #f6f6f6; border-radius: 14px;}
+.c2_i{text-align: center; width: 100%; padding-top: 12.5%;}
+.c2_i img{width: 15%;}
+.c2_t1{text-align: center; color: #2a2a2a; padding-top: 3%;}
+
+.c3_t{width: 100%; font-size: 16pt; color: #5b5b5b; font-weight: 500; margin-top: 10%; margin-bottom: 2%;}
+.c3_box{width: 100%; height: 250px; background-color: #f6f6f6; border-radius: 14px;}
+.c3_i{text-align: center; width: 100%; padding-top: 13%;}
+.c3_i img{width: 30%;}
+.c3_t1{text-align: center; color: #2a2a2a; padding-top: 3%;}
+
+.c_t{font-size: 10pt; margin-top: 5%; margin-bottom: 10%;}
+/*메인 끝*/
+
+
+/*하단 GNB 시작*/
+.b_GNB{width: 100%; max-width: 412px; height: 100px; margin: 0 auto; background-color: #ffffff;}
+.GNB1{width: 20%; height: 100px; float: left; text-align: center; margin: 0 auto; font-size: 14pt; font-weight: 500; }
+.GNB2{width: 20%; height: 100px; float: left; text-align: center; margin: 0 auto; font-size: 14pt; font-weight: 500;}
+.GNB3{width: 20%; height: 100px; float: left; text-align: center; margin: 0 auto; font-size: 14pt; font-weight: 500;}
+.GNB4{width: 20%; height: 100px; float: left; text-align: center; margin: 0 auto; font-size: 14pt; font-weight: 500;}
+.GNB5{width: 20%; height: 100px; float: left; text-align: center; margin: 0 auto; font-size: 14pt; font-weight: 500;}
+.GNB_I{width: 100%; height: 40px; margin-top: 20%;}
+.GNB_I2{width: 100%; height: 40px; margin-top: 15%;}
+.GNB_T{width: 100%; margin-top: 5%;}
+.GNB_T2{width: 100%; margin-top: 10%;}
+/*하단 GNB 끝*/
+
+/*헤더 시작*/  
+
+
+/*헤더 끝*/ 
+
+/*메인 시작*/
+
+
+/*메인 끝*/ 
